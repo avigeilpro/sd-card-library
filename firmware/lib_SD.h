@@ -1,5 +1,5 @@
-#ifndef libSD
-#define libSD
+#ifndef lib_SD
+#define lib_SD
 
 #include "sd-card-library-photon-compat.h"
 
