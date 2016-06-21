@@ -65,6 +65,7 @@ void ReadFile(char *Folder, char *FName, char *result) {
         // close the file:
         myFile.close();
     }
+    sprintf(result,"%s",result);
   //return result;
 }
 
