@@ -3,10 +3,11 @@
 
 #include "sd-card-library-photon-compat.h"
 
+File myFile;
 
 int WriteFile(char *Folder, char *FName, String Text, int Final, int OverWrite = 0)
     {
-    File myFile;
+    
     char FullAddr[40];
     FullAddr[0]=0;
     if (!((Folder[0] == 0)||((Folder[0] == '/')&(Folder[1]==0)))){
@@ -44,7 +45,7 @@ int WriteFile(char *Folder, char *FName, String Text, int Final, int OverWrite =
 
 //char *ReadFile(char *Folder, char *FName) {
 void ReadFile(char *Folder, char *FName, char *result) {
-    File myFile;
+    
     char FullAddr[40];
     //char result[600];
     result[0]=0;
